@@ -13,12 +13,16 @@ void loop() {
   // print the string when a newline arrives:
   nome = coletaDados();
 
-  Serial.print("Assistente falando: ");
-  Serial.println(nome);
+  /*if (nome.startsWith("lumus")) {
+    analogWrite(LED_BUILTIN, 200);// toggle
+  }else if (nome.startsWith("lumus maxima")) {
+    analogWrite(LED_BUILTIN, 255);// toggle
+  }else if (nome.startsWith("nox")) {
+    analogWrite(LED_BUILTIN, 0);// toggle
+  }*/
   
   if (nome.startsWith("ligar")) {
     digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));// toggle
-
   }
   delay(1000);
 
