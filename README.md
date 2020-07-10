@@ -13,3 +13,6 @@ Pode-se utilizar os seguintes comandos para instalar os pacotes necessários:
 #pip install pipwin
 
 #pipwin install pyaudio
+
+
+Lembrar sempre da porta usada no arduino e caso use uma diferente mudar no arquivo;
