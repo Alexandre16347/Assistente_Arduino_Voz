@@ -18,3 +18,7 @@ Pode-se utilizar os seguintes comandos para instalar os pacotes necessários:
 
 
 Lembrar sempre da porta usada no arduino e caso use uma diferente mudar no arquivo;
+
+
+Implementação e correção de bugs feitos por Alexandre, Brenne e Manoel;
+codigo usado do canal Inteligencia Mil Grau: https://www.youtube.com/playlist?list=PLYAGaVIlnsYZSuy4JBS8K_wdnhk27UtrI;
