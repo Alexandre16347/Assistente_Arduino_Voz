@@ -14,5 +14,7 @@ Pode-se utilizar os seguintes comandos para instalar os pacotes necessários:
 
 #pipwin install pyaudio
 
+#pip install pyserial
+
 
 Lembrar sempre da porta usada no arduino e caso use uma diferente mudar no arquivo;
