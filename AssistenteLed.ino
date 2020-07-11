@@ -6,25 +6,29 @@ void setup() {
   // reserve 200 bytes for the inputString:
   nome.reserve(200);
 
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(3, OUTPUT); //Usando a porta 3 (PWM)
 }
 
 void loop() {
   // print the string when a newline arrives:
   nome = coletaDados();
 
-  /*if (nome.startsWith("lumus")) {
-    analogWrite(LED_BUILTIN, 200);// toggle
-  }else if (nome.startsWith("lumus maxima")) {
-    analogWrite(LED_BUILTIN, 255);// toggle
-  }else if (nome.startsWith("nox")) {
-    analogWrite(LED_BUILTIN, 0);// toggle
-  }*/
+  if (nome.startsWith("lumus") || nome.startsWith("lumos")) {
+    analogWrite(3, 50);// toggle
+  } 
+  if (nome.startsWith("lumus máxima") || nome.startsWith("lumos máxima")) {
+    analogWrite(3, 255);// toggle
+  } 
   
-  if (nome.startsWith("ligar")) {
-    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));// toggle
+  if (nome.startsWith("nox")) {
+    analogWrite(3, 0);// toggle
   }
+
+  /* if (nome.startsWith("ligar")) {
+     digitalWrite(A0, !digitalRead(LED_BUILTIN));// toggle
+    }*/
   delay(1000);
+  
 
 }
 
